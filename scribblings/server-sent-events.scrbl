@@ -1,12 +1,12 @@
 #lang scribble/manual
 
-@(require (for-label sse
+@(require (for-label server-sent-events
                      racket/base
                      web-server/http)
           scribble/example)
 
-@title{sse: Server-Sent Events}
-@defmodule[sse]
+@title{server-sent-events: Server-Sent Events}
+@defmodule[server-sent-events]
 
 This package implements @hyperlink["https://html.spec.whatwg.org/multipage/server-sent-events.html#server-sent-events"]{Server-Sent Events}
 on Racket ports: the WHATWG wire format on the encoding side, and a
@@ -25,7 +25,7 @@ piece, so multi-line payloads survive the trip. The optional @racket[id]
 sets the client's last-event ID.
 
 @examples[#:eval (make-base-eval) #:label ""
-  (require sse)
+  (require server-sent-events)
   (sse-encode "edition" "{\"date\":\"2026-10-13\"}")
   (sse-encode "log" "line one\nline two")]
 

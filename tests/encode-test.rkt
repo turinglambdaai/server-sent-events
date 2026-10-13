@@ -1,7 +1,7 @@
 #lang racket/base
 
 (require rackunit
-         sse)
+         server-sent-events)
 
 (test-case "single-line frame (wire-compat shape)"
   (check-equal? (sse-encode "edition" "{\"a\":1}")

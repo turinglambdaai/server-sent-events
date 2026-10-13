@@ -1,6 +1,6 @@
-# sse
+# server-sent-events
 
-[![CI](https://github.com/turinglambdaai/sse/actions/workflows/ci.yml/badge.svg)](https://github.com/turinglambdaai/sse/actions/workflows/ci.yml)
+[![CI](https://github.com/turinglambdaai/server-sent-events/actions/workflows/ci.yml/badge.svg)](https://github.com/turinglambdaai/server-sent-events/actions/workflows/ci.yml)
 
 Server-Sent Events for Racket: the WHATWG wire format plus a small
 fan-out hub. A protocol library, not a framework — event routing,
@@ -9,7 +9,7 @@ serialization, and the HTTP server stay with the caller.
 ## Install
 
 ```
-raco pkg install sse
+raco pkg install server-sent-events
 ```
 
 ## Use
@@ -17,7 +17,7 @@ raco pkg install sse
 Serve an event stream from any `response/output`-shaped server:
 
 ```racket
-(require sse
+(require server-sent-events
          web-server/http)
 
 (define hub (make-hub))
@@ -62,7 +62,7 @@ connection setup and reconnect policy are the caller's job.
 ```
 raco pkg install --auto --link .
 raco test tests
-raco setup --check-pkg-deps -l sse
+raco setup --check-pkg-deps -l server-sent-events
 ```
 
 ## License

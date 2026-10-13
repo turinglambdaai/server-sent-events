@@ -1,13 +1,13 @@
-# sse
+# server-sent-events
 
-[![CI](https://github.com/turinglambdaai/sse/actions/workflows/ci.yml/badge.svg)](https://github.com/turinglambdaai/sse/actions/workflows/ci.yml)
+[![CI](https://github.com/turinglambdaai/server-sent-events/actions/workflows/ci.yml/badge.svg)](https://github.com/turinglambdaai/server-sent-events/actions/workflows/ci.yml)
 
 Racket 的 Server-Sent Events 实现：WHATWG 线上格式 + 轻量扇出 hub。这是协议库而不是框架——事件路由、序列化、HTTP 服务器都留给调用者。
 
 ## 安装
 
 ```
-raco pkg install sse
+raco pkg install server-sent-events
 ```
 
 ## 使用
@@ -15,7 +15,7 @@ raco pkg install sse
 从任何 `response/output` 风格的服务器上挂一个事件流：
 
 ```racket
-(require sse
+(require server-sent-events
          web-server/http)
 
 (define hub (make-hub))
@@ -56,7 +56,7 @@ raco pkg install sse
 ```
 raco pkg install --auto --link .
 raco test tests
-raco setup --check-pkg-deps -l sse
+raco setup --check-pkg-deps -l server-sent-events
 ```
 
 ## 许可

@@ -40,5 +40,5 @@ serialization policy.
 ## Quality gates (before any release)
 
 1. `raco test tests` — all green
-2. `raco setup --check-pkg-deps -l sse` — zero violations
-3. `raco setup -l sse` — docs build clean, zero undefined tags
+2. `raco setup --check-pkg-deps -l server-sent-events` — zero violations
+3. `raco setup -l server-sent-events` — docs build clean, zero undefined tags

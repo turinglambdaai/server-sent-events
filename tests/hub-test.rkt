@@ -2,7 +2,7 @@
 
 (require rackunit
          racket/string
-         sse)
+         server-sent-events)
 
 ;; Read lines up to and including the frame-terminating blank line.
 (define (read-frame rin)

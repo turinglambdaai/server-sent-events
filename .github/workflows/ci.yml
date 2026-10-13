@@ -29,4 +29,4 @@ jobs:
         run: raco test tests
 
       - name: Build docs and check package deps
-        run: raco setup --check-pkg-deps -l sse
+        run: raco setup --check-pkg-deps -l server-sent-events
