@@ -1,5 +1,7 @@
 # server-sent-events
 
+[English](README.md) · **中文**
+
 [![CI](https://github.com/turinglambdaai/server-sent-events/actions/workflows/ci.yml/badge.svg)](https://github.com/turinglambdaai/server-sent-events/actions/workflows/ci.yml)
 
 Racket 的 Server-Sent Events 实现：WHATWG 线上格式 + 轻量扇出 hub。这是协议库而不是框架——事件路由、序列化、HTTP 服务器都留给调用者。

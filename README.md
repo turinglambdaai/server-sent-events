@@ -1,5 +1,7 @@
 # server-sent-events
 
+**English** · [中文](README.zh-CN.md)
+
 [![CI](https://github.com/turinglambdaai/server-sent-events/actions/workflows/ci.yml/badge.svg)](https://github.com/turinglambdaai/server-sent-events/actions/workflows/ci.yml)
 
 Server-Sent Events for Racket: the WHATWG wire format plus a small
